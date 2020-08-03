@@ -11,7 +11,7 @@
 		die("connection failed: " . mysqli_connect_error());
 	}
 
-$sql = "SELECT * from advisorinfo where advisorID = ".$_SESSION['AID'];
+$sql = "SELECT * from advisorinfo where IDnum = ".$_SESSION['$aid'];
 
 	$result = mysqli_query($conn,$sql);
 
@@ -19,9 +19,9 @@ $sql = "SELECT * from advisorinfo where advisorID = ".$_SESSION['AID'];
 
 		while($row = mysqli_fetch_assoc($result)){
 
-			$uname = $row["IDnum"];
-			$fname = $row["Fname"];
-			$lname = $row["Lname"];
+			$aduname = $row["IDnum"];
+			$adfname = $row["Fname"];
+			$adlname = $row["Lname"];
 			$email = $row["Email"];
 
 
@@ -58,7 +58,7 @@ $sql = "SELECT * from advisorinfo where advisorID = ".$_SESSION['AID'];
 			</tr>
 			<tr>
 				<th><label>Advisor INFORMATION:</label></th>
-				<td><p><?php echo $fname." "; echo $lname; ?></p></td>
+				<td><p><?php echo $adfname." "; echo $adlname; ?></p></td>
 				<td><p><?php echo $email;?></p></td>
 			</tr>
 
