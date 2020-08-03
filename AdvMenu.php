@@ -15,14 +15,7 @@
 	foreach($_SESSION as $key=>$value){
 		$$key = $value;
 	}
-  $status1;
-  if($_SESSION['$gpa']<1.71){
-    $status1 = "Probation";
-  }else if($_SESSION['$gpa']<2.5){
-    $status1 = "Pre-Probation";
-  }else if($_SESSION['$gpa']<4.0){
-    $status1 = "OK";
-  }
+
 
 ?>
 <head>
