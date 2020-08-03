@@ -53,14 +53,14 @@
   <div id="btnArea">
     <form method = "POST" action= "logout.php" >
     <input type="button"  value="View Status" onclick="location.href='status.php'"/>
-    <input type="button"  value="Previous Advice" onclick="location.href='history.php'"/>
+    <!--input type="button"  value="Previous Advice" onclick="location.href='history.php'"/>
     <input type="button"  value="Check in" onclick="location.href=''"/>
-    <input type="button" onClick="location.href='hometab.php'" value='Advisement program'>
+    <input type="button" onClick="location.href='hometab.php'" value='Advisement program'-->
     <?php
 
 						if($_SESSION['$status1']=="Probation" || $_SESSION['$status1']=="Pre-Probation"){
 
-            echo"<input type='button'  value='Homework' onclick='location.href='homework.php'/>";
+            //echo"<input type='button'  value='Homework' onclick='location.href='homework.php'/>";
 						}
 						//<input type='submit' class = '<?php echo $class;?//>' value = 'User Accounts' name='admin'>
 					?>
