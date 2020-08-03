@@ -57,7 +57,7 @@ $sql = "SELECT * from advisorinfo where IDnum = ".$_SESSION['$aid'];
 				<td><p><?php echo $_SESSION['$gpa'];?></p></td>
 			</tr>
 			<tr>
-				<th><label>Advisor INFORMATION:</label></th>
+				<th><label>ADVISOR INFORMATION:</label></th>
 				<td><p><?php echo $adfname." "; echo $adlname; ?></p></td>
 				<td><p><?php echo $email;?></p></td>
 			</tr>
